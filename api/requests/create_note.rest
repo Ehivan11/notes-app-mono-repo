@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGFmZTNlMmE2ZTM5MGE1NWE4MTg4MCIsInVzZXJuYW1lIjoiZWhpdmFuMTEiLCJpYXQiOjE2NDkwODE5MzQsImV4cCI6MTY0OTY4NjczNH0.1NoF3429iJGjTlsSScB8bfs9VH2xJpD9SDCyGt6LPD8
+
+{
+  "name": "Lemon",
+  "content": "Just a Lemon",
+}

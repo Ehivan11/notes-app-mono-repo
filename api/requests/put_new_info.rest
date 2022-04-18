@@ -1,0 +1,7 @@
+PUT http://localhost:3000/api/notes/623cc2d24633d116e11d6a1f
+Content-Type: application/json
+
+{
+    "name": "Anana",
+    "content": "Just an Anana",
+}
