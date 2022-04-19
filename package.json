@@ -7,13 +7,18 @@
     "api",
     "app"
   ],
+  "engines": {
+    "npm": "7.9.0"
+  },
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --workspace=app",
+    "lint": "eslint ./api ./app",
+    "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=app",
     "start:api": "npm run build --workspace=api",
     "dev:api": "npm run build && npm run dev --workspace=api"
   },
   "eslintConfig": {
+    "ignorePatterns": "build",
     "env": {
       "cypress/globals": true,
       "jest": true
