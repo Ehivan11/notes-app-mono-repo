@@ -71,7 +71,7 @@ describe('Note App', () => {
           important: false
         })
       })
-      it('it can be made important', () => {
+      it('can be made important', () => {
         cy.contains('This is the second note').as('theNote')
 
         cy.get('@theNote').contains('make important').click()

@@ -1,4 +1,5 @@
 module.exports = {
+  ignorePatterns: 'build',
   env: {
     browser: true,
     commonjs: true,
@@ -8,11 +9,23 @@ module.exports = {
     jest: true
   },
   extends: [
-    'standard'
+    'standard',
+    'react-app',
+    'react-app/jest',
+    'plugin:cypress/recommended'
   ],
   parserOptions: {
     ecmaVersion: 12
   },
   rules: {
-  }
+    'cypress/no-assigning-return-values': 'error',
+    'cypress/no-unnecessary-waiting': 'error',
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    'cypress/no-async-tests': 'error',
+    'cypress/no-pause': 'error'
+  },
+  plugins: [
+    'cypress'
+  ]
 }

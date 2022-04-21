@@ -18,28 +18,15 @@
     "start:api": "npm run build --workspace=api",
     "dev:api": "npm run build && npm run dev --workspace=api"
   },
-  "eslintConfig": {
-    "ignorePatterns": "build",
-    "env": {
-      "cypress/globals": true,
-      "jest": true
-    },
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "plugins": [
-      "cypress"
-    ]
-  },
   "dependencies": {
-    "eslint-plugin-cypress": "^2.12.1",
-    "axios": "^0.26.1"
+    "axios": "^0.26.1",
+    "eslint-plugin-cypress": "^2.12.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "cypress": "^9.5.4",
-    "eslint": "^8.0.1",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard": "17.0.0",
     "eslint-plugin-config": "0.0.7",
     "eslint-plugin-import": "2.26.0",
