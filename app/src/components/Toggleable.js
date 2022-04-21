@@ -2,7 +2,7 @@ import React, { forwardRef, useImperativeHandle, useState } from 'react'
 import PropTypes from 'prop-types'
 import i18n from '../i18n/index'
 
-const Toggleable = forwardRef(({ children, buttonLabel = 'New'}, ref) => {
+const Toggleable = forwardRef(({ children, buttonLabel = 'New' }, ref) => {
   const [visible, setVisible] = useState(false)
 
   const hideWhenVisible = { display: visible ? 'none' : '' }

@@ -1,11 +1,11 @@
-import React, {useRef, useState} from 'react'
+import React, { useRef, useState } from 'react'
 import Toggleable from './Toggleable'
 
-export default function NoteForm({ addNote, handleLogout }) {
+export default function NoteForm ({ addNote, handleLogout }) {
   const [newNote, setNewNote] = useState('')
   const toggleableRef = useRef()
 
-  const handleChange = ({target}) => {
+  const handleChange = ({ target }) => {
     setNewNote(target.value)
   }
 
@@ -14,7 +14,7 @@ export default function NoteForm({ addNote, handleLogout }) {
 
     const noteObject = {
       content: newNote,
-      important: false,
+      important: false
     }
 
     addNote(noteObject)

@@ -23,18 +23,29 @@
       "cypress/globals": true,
       "jest": true
     },
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
     "plugins": [
       "cypress"
     ]
   },
+  "dependencies": {
+    "eslint-plugin-cypress": "^2.12.1"
+  },
   "devDependencies": {
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-config": "0.0.7"
+    "cross-env": "^7.0.3",
+    "cypress": "^9.5.4",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-config": "0.0.7",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "^7.29.4"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.26.1"
-  }
+  "license": "ISC"
 }

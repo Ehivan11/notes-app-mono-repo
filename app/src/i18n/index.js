@@ -1,5 +1,5 @@
 export default {
-    TOGLEABLE: {
-            CANCEL_BUTTON: 'Cancel'
-    }
+  TOGLEABLE: {
+    CANCEL_BUTTON: 'Cancel'
+  }
 }

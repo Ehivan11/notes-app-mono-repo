@@ -2,32 +2,32 @@ import React, { useState } from 'react'
 import Toggleable from './Toggleable'
 import PropTypes from 'prop-types'
 
-export default function LoginForm({ handleLogin }) {
+export default function LoginForm ({ handleLogin }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    
+
     const user = {
       username,
-      password,
+      password
     }
 
     window.localStorage.setItem(
       'loggedNoteAppUser', JSON.stringify(user)
     )
-    
+
     handleLogin(user)
     setUsername('')
     setPassword('')
   }
 
-  const handleUsernameChange = ({target}) => {
+  const handleUsernameChange = ({ target }) => {
     setUsername(target.value)
   }
 
-  const handlePasswordChange = ({target}) => {
+  const handlePasswordChange = ({ target }) => {
     setPassword(target.value)
   }
 
